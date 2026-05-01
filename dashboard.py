@@ -9,7 +9,12 @@ import time
 # CONFIG
 # =====================================================
 
-API_KEY = "f46207aae7aa49b0910374f83122f5eb"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 TOP_STOCKS = [
     "AAPL","MSFT","TSLA","NVDA","GOOGL",
